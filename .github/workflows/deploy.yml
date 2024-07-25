@@ -1,10 +1,7 @@
-name: CI
+name: Deploy
 
 on:
   push:
-    branches:
-      - "main"
-  pull_request:
     branches:
       - "main"
   workflow_dispatch:
@@ -15,8 +12,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -24,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Install mdbook
         uses: baptiste0928/cargo-install@v3
         with:
@@ -39,15 +35,13 @@ jobs:
         run: |
           mdbook --version
           mdbook-katex --version
-      - run: mdbook build
-      - name: Run Link Checker
-        uses: lycheeverse/lychee-action@v1
-        with:
-          args: --base book .
-
+      - name: Build book
+        run: mdbook build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        id: pages
       - name: Upload mdbook
         uses: actions/upload-artifact@v3
-        if: github.ref == 'refs/heads/main'
         with:
           path: ./book
 
@@ -58,8 +52,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs:
-      - build
+    needs: build
     steps:
-      - uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
         id: deployment
