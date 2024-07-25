@@ -1,0 +1,2 @@
+src/*.md linguist-detectable=true
+theme/highlight.js linguist-vendored
