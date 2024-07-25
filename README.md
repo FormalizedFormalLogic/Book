@@ -1,8 +1,14 @@
-# Book of Formalized Formal Logic
+# [Book of Formalized Formal Logic](https://github.com/FormalizedFormalLogic/Book)
+
+[![Deploy Status](https://github.com/FormalizedFormalLogic/book/actions/workflows/deploy.yml/badge.svg)](https://github.com/FormalizedFormalLogic/book/actions/workflows/deploy.yml)
 
 Summary and brief explanation of formalized results in this project.
 
 ## Contributing
+
+If you find a typo, spelling error or else, feel free to report us. [Issues](https://github.com/FormalizedFormalLogic/Book/issues) and [pull requests](https://github.com/FormalizedFormalLogic/Book/pulls) are welcome.
+
+### Compile
 
 To compile this book, you need bookmd and some plugins.
 
