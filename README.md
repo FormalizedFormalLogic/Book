@@ -1,4 +1,4 @@
-# [Book of Formalized Formal Logic](https://github.com/FormalizedFormalLogic/Book)
+# [Book of Formalized Formal Logic](https://formalizedformallogic.github.io/Book/)
 
 [![Deploy Status](https://github.com/FormalizedFormalLogic/book/actions/workflows/deploy.yml/badge.svg)](https://github.com/FormalizedFormalLogic/book/actions/workflows/deploy.yml)
 
