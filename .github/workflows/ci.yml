@@ -5,6 +5,8 @@ on:
     branches:
       - "main"
   pull_request:
+    branches:
+      - "main"
   workflow_dispatch:
 
 permissions:
@@ -44,10 +46,9 @@ jobs:
           args: --base book .
 
       - name: Upload mdbook
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:
-          name: book
           path: ./book
 
   deploy:
