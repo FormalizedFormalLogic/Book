@@ -37,7 +37,7 @@ jobs:
         run: |
           mdbook --version
           mdbook-katex --version
-      - run: mdbook build md
+      - run: mdbook build
       - name: Run Link Checker
         uses: lycheeverse/lychee-action@v1
         with:
