@@ -101,7 +101,7 @@ Gödel's ontological argument of God's existence.
 
 Completeness of Gödel-Löb (provability) modal logic $\bf GL$ in HOL/Light.
 
-- [Marco Maggesi, Cosimo Perini Brogi, _"Mechanising Gödel–Löb Provability Logic in HOL Light"_](http://dx.doi.org/10.1007/s10817-023-09677-z)
+- [Marco Maggesi, Cosimo Perini Brogi, _"Mechanising Gödel–Löb Provability Logic in HOL Light"_](http://doi.org/10.1007/s10817-023-09677-z)
 
 #### [u5943321/Modal-Logic](https://github.com/u5943321/Modal-Logic)
 
