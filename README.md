@@ -25,4 +25,4 @@ mdbook build md
 
 This document is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0).
 
-[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://github.com/FormalizedFormalLogic/Foundation/blob/master/LICENSE)
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://github.com/FormalizedFormalLogic/Book?tab=CC-BY-4.0-1-ov-file)
