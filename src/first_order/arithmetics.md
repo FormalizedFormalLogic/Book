@@ -100,11 +100,13 @@ Since `Exponential` and `Exponential.total` are defined in all the model of $\ma
 [`⋃ʰᶠ x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.sUnion
 [`x ∪ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.union
 [`x ∩ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.inter
+[`⋂ʰᶠ x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.sInter
 [`x ×ʰᶠ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.product
 [`domain x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.domain
 [`IsMapping x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.IsMapping
 [`Seq x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.Seq
 [`lh x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.lh
+[`x ⁀' y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.seqCons
 [`znth x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.znth
 [`L.Semiterm x y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Metamath/Term/Basic.html#LO.Arith.Language.Semiterm
 [`L.termSubst n m w t`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Metamath/Term/Functions.html#LO.Arith.Language.termSubst
