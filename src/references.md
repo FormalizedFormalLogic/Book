@@ -6,7 +6,7 @@
 - W. Pohlers, Proof Theory: The First Step into Impredicativity
 - P. Hájek, P. Pudlák, Metamathematics of First-Order Arithmetic
 - R. Kaye, Models of Peano arithmetic
-- 田中 一之, ゲーデルと20世紀の論理学
+- 田中 一之, ゲーデルと 20 世紀の論理学
 - 菊池 誠 (編者), 『数学における証明と真理 ─ 様相論理と数学基礎論』
 - P. Blackburn, M. de Rijke, Y. Venema, "Modal Logic"
 - Open Logic Project, ["The Open Logic Text"](https://builds.openlogicproject.org/)
@@ -19,14 +19,13 @@
 ## Related Works
 
 Here is the list of project particularly formalize mathematical logics.
-If you find something missing from this list or add, report via [issues](https://github.com/iehality/lean4-logic/issues).
+If you find something missing from this list or add, report via [issues](https://github.com/FormalizedFormalLogic/Foundation/issues).
 
 ### Lean 4
 
 #### [m4lvin/lean4-pdl](https://github.com/m4lvin/lean4-pdl)
 
 Propositional dynamic logics.
-
 
 #### [alexoltean61/hybrid_logic_lean](https://github.com/alexoltean61/hybrid_logic_lean)
 
@@ -35,7 +34,6 @@ Syntax and semantics for hybrid logic are provided, and some facts and soundness
 However [completeness seems to have been not yet formalized](https://github.com/alexoltean61/hybrid_logic_lean/blob/5ce7b680763fd7fed1404f294478757bb52dea18/Hybrid/Completeness.lean#L62-L67).
 
 - [Andrei-Alexandru Oltean, _"A Formalization of Hybrid Logic in Lean"_](https://raw.githubusercontent.com/alexoltean61/alexoltean61.github.io/main/hybrid.pdf)
-
 
 #### [leanprover-community/con-nf](https://github.com/leanprover-community/con-nf)
 
@@ -59,8 +57,7 @@ Hilbert-style deduction system, Kripke semantics and Henkin-style (constructing 
 
 - [Huayo Guo, Dongheng Chen, Bruno Bentzen, _"Verified completeness in Henkin-style for intuitionistic propositional logic"_](https://arxiv.org/abs/2310.01916)
 
-
-####  [bbentzen/mpl](https://github.com/bbentzen/mpl/)
+#### [bbentzen/mpl](https://github.com/bbentzen/mpl/)
 
 Normal modal logic.
 
@@ -68,22 +65,17 @@ Hilbert-style deduction system, Kripke semantics and Henkin-style (constructing 
 
 - [Bruno Bentzen, _"A Henkin-style completeness proof for the modal logic S5"_](https://arxiv.org/abs/1910.01697)
 
-
 #### [paulaneeley/modal](https://github.com/paulaneeley/modal)
 
 Formalization of modal logic $\bf S5$ and public announcement logic.
 
 - [Paula Neeley, _"A Formalization of Dynamic Epistemic Logic"_](https://paulaneeley.com/wp-content/uploads/2021/05/draft1.pdf)
 
-
-
 #### [minchaowu/ModalTab](https://github.com/minchaowu/ModalTab)
 
 Tableaux system for modal logic $\bf K, KT, S4$.
 
 - [Minchao Wu, Rajeev Goré, _"Verified Decision Procedures for Modal Logics"_](https://doi.org/10.4230/LIPIcs.ITP.2019.31)
-
-
 
 #### [ljt12138/Formalization-PAL](https://github.com/ljt12138/Formalization-PAL)
 
@@ -109,7 +101,7 @@ Gödel's ontological argument of God's existence.
 
 Completeness of Gödel-Löb (provability) modal logic $\bf GL$ in HOL/Light.
 
-  - [Marco Maggesi, Cosimo Perini Brogi, _"Mechanising Gödel–Löb Provability Logic in HOL Light"_](http://dx.doi.org/10.1007/s10817-023-09677-z)
+- [Marco Maggesi, Cosimo Perini Brogi, _"Mechanising Gödel–Löb Provability Logic in HOL Light"_](http://doi.org/10.1007/s10817-023-09677-z)
 
 #### [u5943321/Modal-Logic](https://github.com/u5943321/Modal-Logic)
 
@@ -146,7 +138,7 @@ Hybrid Logic.
 
 #### [Russell O'Connor](https://r6.ca/)'s continuous works on Incompleteness Theorem
 
-  - [Russell O’Connor, _"Essential Incompleteness of Arithmetic Verified by Coq"_](https://arxiv.org/pdf/cs/0505034)
+- [Russell O’Connor, _"Essential Incompleteness of Arithmetic Verified by Coq"_](https://arxiv.org/pdf/cs/0505034)
 
 #### [fondefjobn/S5-Formalization-in-Coq](https://github.com/fondefjobn/S5-Formalization-in-Coq/)
 

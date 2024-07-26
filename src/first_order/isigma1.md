@@ -16,7 +16,7 @@ Weak theory of sets in $V_\omega$ (Hereditary Finite Sets) can be developed insi
 lemma mem_iff_bit [M ⊧ₘ* 𝐈𝚺₁] {i a : M} : i ∈ a ↔ Bit i a
 ```
 
-- [LO.FirstOrder.Arith.Model.mem_iff_bit](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.FirstOrder.Arith.Model.mem_iff_bit)
+- [LO.FirstOrder.Arith.Model.mem_iff_bit](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.FirstOrder.Arith.Model.mem_iff_bit)
 
 The following comprehension holds.
 
@@ -25,19 +25,22 @@ theorem finset_comprehension₁ [M ⊧ₘ* 𝐈𝚺₁]
     {P : M → Prop} (hP : (Γ, 1)-Predicate P) (a : M) :
     ∃ s < exp a, ∀ i < a, i ∈ s ↔ P i
 ```
-- [LO.FirstOrder.Arith.Model.finset_comprehension₁](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.FirstOrder.Arith.Model.finset_comprehension%E2%82%81)
 
-The basic concepts of set theory, such as [union](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.union), [inter](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.inter), 
-[cartesian product](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.product),
-and [mapping](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.IsMapping), etc. are defined.
+- [LO.FirstOrder.Arith.Model.finset_comprehension₁](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.FirstOrder.Arith.Model.finset_comprehension%E2%82%81)
+
+The basic concepts of set theory, such as [union](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.union), [inter](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.inter),
+[cartesian product](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.product),
+and [mapping](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.FirstOrder.Arith.Model.IsMapping), etc. are defined.
 
 ### Seq
+
 $\mathrm{Seq}(s)$ iff $s$ is a mapping and its domain is $[0, l)$ for some $l$.
 
 ```lean
 def Seq [M ⊧ₘ* 𝐈𝚺₁] (s : M) : Prop := IsMapping s ∧ ∃ l, domain s = under l
 ```
-- [LO.FirstOrder.Arith.Model.Seq](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.FirstOrder.Arith.Model.Seq)
+
+- [LO.FirstOrder.Arith.Model.Seq](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.FirstOrder.Arith.Model.Seq)
 
 ### Primitive Recursion
 
@@ -72,11 +75,12 @@ theorem Construction.result_zero :
 theorem Construction.result_succ (u : M) :
     c.result v (u + 1) = c.succ v u (c.result v u)
 ```
-- [Formulae](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Formulae), [Construction](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction), [Construction.result](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction.result), [Construction.result_zero](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction.result_zero), [Construction.result_succ](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction.result_succ)
+
+- [Formulae](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Formulae), [Construction](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction), [Construction.result](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction.result), [Construction.result_zero](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction.result_zero), [Construction.result_succ](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/PRF.html#LO.FirstOrder.Arith.Model.PR.Construction.result_succ)
 
 ### Fixpoint
 
-Let $\Phi_C(\vec{v}, x)$ be a predicate, which takes a *class* $C$ as a parameter.
+Let $\Phi_C(\vec{v}, x)$ be a predicate, which takes a _class_ $C$ as a parameter.
 Then there is a $\Sigma_1$-predicate $\mathsf{Fix}_{\Phi}(\vec{v}, x)$ such that
 
 $$
@@ -87,8 +91,8 @@ if $\Phi$ satisfies following conditions:
 
 1.  $\Phi$ is $\Delta_1$-definable if $C$ is a set. i.e.,
     a predicate $(c, \vec{v}, x) \mapsto \Phi_{\{z \mid \mathrm{Bit}(z, c)\}}(\vec{v}, x)$ is $\Delta_1$-definable.
-2.  *Monotone*: $C \subseteq C'$ and $\Phi_C(\vec{v}, x)$ implies $\Phi_{C'}(\vec{v}, x)$.
-3. *Finite*: $\Phi_C (\vec{v}, x)$ implies the existence of a $m$ s.t. $\Phi_{\{z \in C \mid z < m\}} (\vec{v}, x)$.
+2.  _Monotone_: $C \subseteq C'$ and $\Phi_C(\vec{v}, x)$ implies $\Phi_{C'}(\vec{v}, x)$.
+3.  _Finite_: $\Phi_C (\vec{v}, x)$ implies the existence of a $m$ s.t. $\Phi_{\{z \in C \mid z < m\}} (\vec{v}, x)$.
 
 ```lean
 structure Blueprint (k : ℕ) where
@@ -109,14 +113,17 @@ def Construction.Fixpoint (x : M) : Prop
 theorem Construction.case :
     c.Fixpoint v x ↔ c.Φ v {z | c.Fixpoint v z} x
 ```
-- [Blueprint](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Blueprint), [Construction](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.FirstOrder.Arith.Model.Fixpoint.Construction), [Construction.Finite](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Construction.Finite), [Construction.Fixpoint](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.FirstOrder.Arith.Model.Fixpoint.Construction.Fixpoint), [Construction.case](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.FirstOrder.Arith.Model.Fixpoint.Construction.case)
+
+- [Blueprint](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Blueprint), [Construction](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.FirstOrder.Arith.Model.Fixpoint.Construction), [Construction.Finite](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Construction.Finite), [Construction.Fixpoint](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.FirstOrder.Arith.Model.Fixpoint.Construction.Fixpoint), [Construction.case](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.FirstOrder.Arith.Model.Fixpoint.Construction.case)
 
 $\mathsf{Fix}_\Phi(\vec v, x)$ is $\Delta_1$ if $\Phi$ satisfies strong finiteness:
+
 ```lean
 class Construction.StrongFinite (c : Construction M φ) where
   strong_finite {C : Set M} {v x} : c.Φ v C x → c.Φ v {y ∈ C | y < x} x
 ```
-- [StrongFinite](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Construction.StrongFinite)
+
+- [StrongFinite](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Construction.StrongFinite)
 
 Also structural induction holds.
 
@@ -126,4 +133,5 @@ theorem Construction.induction [c.StrongFinite]
     (H : ∀ C : Set M, (∀ x ∈ C, c.Fixpoint v x ∧ P x) → ∀ x, c.Φ v C x → P x) :
     ∀ x, c.Fixpoint v x → P x
 ```
-- [LO.Arith.Fixpoint.Construction.induction](https://iehality.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Construction.induction)
+
+- [LO.Arith.Fixpoint.Construction.induction](https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Fixpoint.html#LO.Arith.Fixpoint.Construction.induction)
