@@ -2,7 +2,7 @@
 
 ## Discuss
 
-GitHub Discussion is [here](https://github.com/iehality/lean4-logic/discussions). Feel free to correct mistakes, ask questions or share ideas.
+GitHub Discussion is [here](https://github.com/FormalizedFormalLogic/Foundation/discussions). Feel free to correct mistakes, ask questions or share ideas.
 
 ## Documentation
 
@@ -31,7 +31,7 @@ Some notation is not prepared default by [lean 4 extension for VSCode](https://m
     "cand": "⋏",
     "cor": "⋎",
     "boxdot": "⊡",
-    "^F": "ꟳ",
+    "^F": "ꟳ"
   }
 }
 ```
