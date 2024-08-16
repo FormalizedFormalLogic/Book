@@ -81,33 +81,33 @@ Since `Exponential` and `Exponential.total` are defined in all the model of $\ma
 |           $\mathrm{Semiformula}_x(y)$           | [`L.Semiformula x y`]   |           $\mathsf{I}\Sigma_1$           |                    -                     | $\Delta_1$ |        -         |
 
 [`x ≤ y`]: https://formalizedformallogic.github.io/Foundation/docs/Logic/FirstOrder/Arith/PeanoMinus.html#LO.Arith.instLE_logic
-[`x - y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/PeanoMinus.html#LO.Arith.sub
-[`x ∣ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/PeanoMinus.html#LO.FirstOrder.Arith.dvd
-[`x / y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/IOpen.html#LO.Arith.instDiv_arithmetization
-[`x % y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/IOpen.html#LO.Arith.rem
-[`√x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/IOpen.html#LO.Arith.sqrt
-[`⟪x, y⟫`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/IOpen.html#LO.Arith.pair
-[`π₁ x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/IOpen.html#LO.Arith.pi%E2%82%81
-[`π₂ x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/Basic/IOpen.html#LO.Arith.pi%E2%82%82
-[`exp x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaZero/Exponential/Exp.html#LO.Arith.Exponential
-[`log x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaZero/Exponential/Log.html#LO.Arith.log
-[`‖x‖`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaZero/Exponential/Log.html#LO.Arith.binaryLength
-[`x # y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/OmegaOne/Basic.html#LO.Arith.instHash
-[`nuon x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/OmegaOne/Nuon.html#LO.Arith.nuon
-[`x ∈ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.Arith.Bit
-[`∅`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.Arith.instEmptyCollection_arithmetization
-[`x ⊆ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Bit.html#LO.Arith.instHasSubset_arithmetization
-[`⋃ʰᶠ x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.sUnion
-[`x ∪ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.union
-[`x ∩ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.inter
-[`⋂ʰᶠ x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.sInter
-[`x ×ʰᶠ y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.product
-[`domain x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.domain
-[`IsMapping x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.IsMapping
-[`Seq x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.Seq
-[`lh x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.lh
-[`x ⁀' y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.seqCons
-[`znth x`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.znth
-[`L.Semiterm x y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Metamath/Term/Basic.html#LO.Arith.Language.Semiterm
-[`L.termSubst n m w t`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Metamath/Term/Functions.html#LO.Arith.Language.termSubst
-[`L.Semiformula x y`]: https://formalizedformallogic.github.io/Arithmetization/Arithmetization/ISigmaOne/Metamath/Formula/Basic.html#LO.Arith.Language.Semiformula
+[`x - y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/PeanoMinus.html#LO.Arith.sub
+[`x ∣ y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/PeanoMinus.html#LO.FirstOrder.Arith.dvd
+[`x / y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/IOpen.html#LO.Arith.instDiv_arithmetization
+[`x % y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/IOpen.html#LO.Arith.rem
+[`√x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/IOpen.html#LO.Arith.sqrt
+[`⟪x, y⟫`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/IOpen.html#LO.Arith.pair
+[`π₁ x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/IOpen.html#LO.Arith.pi%E2%82%81
+[`π₂ x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/Basic/IOpen.html#LO.Arith.pi%E2%82%82
+[`exp x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaZero/Exponential/Exp.html#LO.Arith.Exponential
+[`log x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaZero/Exponential/Log.html#LO.Arith.log
+[`‖x‖`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaZero/Exponential/Log.html#LO.Arith.binaryLength
+[`x # y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/OmegaOne/Basic.html#LO.Arith.instHash
+[`nuon x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/OmegaOne/Nuon.html#LO.Arith.nuon
+[`x ∈ y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/Bit.html#LO.Arith.Bit
+[`∅`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/Bit.html#LO.Arith.instEmptyCollection_arithmetization
+[`x ⊆ y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/Bit.html#LO.Arith.instHasSubset_arithmetization
+[`⋃ʰᶠ x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.sUnion
+[`x ∪ y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.union
+[`x ∩ y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.inter
+[`⋂ʰᶠ x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.sInter
+[`x ×ʰᶠ y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.product
+[`domain x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.domain
+[`IsMapping x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Basic.html#LO.Arith.IsMapping
+[`Seq x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.Seq
+[`lh x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.lh
+[`x ⁀' y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.seqCons
+[`znth x`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/HFS/Seq.html#LO.Arith.znth
+[`L.Semiterm x y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/Metamath/Term/Basic.html#LO.Arith.Language.Semiterm
+[`L.termSubst n m w t`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/Metamath/Term/Functions.html#LO.Arith.Language.termSubst
+[`L.Semiformula x y`]: https://formalizedformallogic.github.io/Arithmetization/docs/Arithmetization/ISigmaOne/Metamath/Formula/Basic.html#LO.Arith.Language.Semiformula
