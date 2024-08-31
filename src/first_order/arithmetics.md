@@ -1,12 +1,12 @@
 # Arithmetics
 
-In this formalization, we prefer developping arithmetic _model theoretic_, i.e.
+In this formalization, we prefer developing arithmetic _model theoretic_, i.e.
 show $T \models \sigma$ instead of $T \vdash \sigma$ (They are equivalent thanks to the completeness theorem.). This approach has several advantages:
 
 1. In general, writing a formalized proof (in formalized system!) is very tedious. Meta-proofs, on the other hand, tend to be relatively concise.
 2. Many definitions and proofs of logic and algebra in Mathlib can be used.
 3. Metaprogramming can streamline the proof process (especially `definability`).
-4. It is easy to extend predicates and functions. When adding predicates or functions, it is necessary to extend its language by _extension by definition_ in case of formalized proof, but not in model theoretic approarch.
+4. It is easy to extend predicates and functions. When adding predicates or functions, it is necessary to extend its language by _extension by definition_ in case of formalized proof, but not in model theoretic approach.
 
 This procedure is done as follows.
 Suppose we wish to prove that the totality of an exponential function can be proved in $\mathsf{I}\Sigma_1$.
@@ -38,7 +38,7 @@ Since `Exponential` and `Exponential.total` are defined in all the model of $\ma
 
 ## Defined Predicates and Functions
 
-|               Predicate/Funcrion                | Notation                |                Defined in                |          Totality is proved in           | Complexity | Polynomial Bound |
+|               Predicate/Function                | Notation                |                Defined in                |          Totality is proved in           | Complexity | Polynomial Bound |
 | :---------------------------------------------: | :---------------------- | :--------------------------------------: | :--------------------------------------: | :--------: | :--------------: |
 |                       $0$                       | `0`                     |                 $\empty$                 |                 $\empty$                 | $\Sigma_0$ |       $0$        |
 |                       $1$                       | `1`                     |                 $\empty$                 |                 $\empty$                 | $\Sigma_0$ |       $1$        |
