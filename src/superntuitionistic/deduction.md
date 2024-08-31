@@ -8,7 +8,7 @@ structure DeductionParameter (α) where
   axiomSet : AxiomSet α
 ```
 
-- `axiomSet` is set of formula (aximos), For example, `𝗘𝗙𝗤`, `𝗘𝗙𝗤 ∪ 𝗟𝗘𝗠`.
+- `axiomSet` is set of formulas (axioms), For example, `𝗘𝗙𝗤`, `𝗘𝗙𝗤 ∪ 𝗟𝗘𝗠`.
 
 In this formalization, logics that we usually refer to as $\bf Int$ (Intuitionistic Propositional Logic), $\bf Cl$ (Classical Propositional Logic), etc. is characterized by deduction parameter.
 
