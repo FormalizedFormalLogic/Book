@@ -171,7 +171,56 @@ Thanks to the completeness theorem, the following holds.
 - $U \vdash \mathrm{Bew}_T(\ulcorner \sigma \to \pi \urcorner) \to \mathrm{Bew}_T(\ulcorner \sigma \urcorner) \to \mathrm{Bew}_T(\ulcorner \pi \urcorner)$
 - $U \vdash \sigma \to \mathrm{Bew}_T(\ulcorner \sigma \urcorner)$ if $\sigma \in \Sigma_1\text{-sentence}$
 
+## Second Incompleteness Theorem
 
+Assume that $T$ is stronger than $\mathsf{I}\Sigma_1$.
+
+### Fixpoint Lemma
+
+Since the substitution is $\Sigma_1$, There is a formula $\mathrm{ssnum}(y, p, x)$
+ such that, for all formula $\varphi$ with only one variable and $x, y \in V$,
+
+$$
+  \mathrm{ssnum}(y, {\ulcorner \varphi \urcorner}, x) \iff
+  y = \ulcorner \varphi(\overline{x}) \urcorner
+$$
+ 
+holds. (overline $\overline{\bullet}$ denotes the (formalized) numeral of $x$)
+
+Define a sentence $\mathrm{fixpoint}_\theta$ for formula (with one variable) $\theta$ as follows.
+
+$$
+  \begin{align*}
+    \mathrm{fixpoint}_\theta
+      &\coloneqq \mathrm{diag}_\theta(\overline{\ulcorner \mathrm{diag}_\theta \urcorner}) \\
+    \mathrm{diag}_\theta(x)
+      &\coloneqq (\forall y)[\mathrm{ssnum}(y, x, x) \to \theta (y)]
+  \end{align*}
+$$
+
+**Lemma**: $T \vdash \mathrm{fixpoint}_\theta \leftrightarrow \theta({\ulcorner \mathrm{fixpoint}_\theta \urcorner})$
+
+- _Proof._
+  $$
+    \begin{align*}
+      \mathrm{fixpoint}_\theta
+        &\equiv
+          (\forall x)[
+            \mathrm{ssnum}(
+              x,
+              {\ulcorner \mathrm{diag}_\theta \urcorner},
+              {\ulcorner \mathrm{diag}_\theta \urcorner}) \to
+            \theta (x)
+            ] \\
+        &\leftrightarrow
+          \theta(\ulcorner \mathrm{diag}_\theta(\overline{\ulcorner \mathrm{diag}_\theta \urcorner}) \urcorner) \\
+        &\equiv
+          \theta(\ulcorner \mathrm{fixpoint}_\theta \urcorner)
+    \end{align*}
+  $$
+  ∎
+
+### Main Theorem
 
 
 
