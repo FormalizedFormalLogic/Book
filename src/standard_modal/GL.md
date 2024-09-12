@@ -2,7 +2,7 @@
 
 ## Logics Equivalent to GL
 
-Introduct Henkin Axiom `𝗛`, Löb Rule `(𝐋)`, Henkin Rule `(𝐇)`.
+Let's introduce Henkin Axiom `𝗛`, Löb Rule `(𝐋)`, Henkin Rule `(𝐇)`.
 
 ```lean
 protected abbrev H := □(□p ⟷ p) ⟶ □p
@@ -26,7 +26,7 @@ lemma reducible_K4Loeb_K4Henkin: 𝐊𝟒(𝐋) ≤ₛ 𝐊𝟒(𝐇)
 lemma reducible_K4Henkin_K4H : 𝐊𝟒(𝐇) ≤ₛ 𝐊𝟒𝐇
 lemma reducible_K4Henkin_GL : 𝐊𝟒𝐇 ≤ₛ 𝐆𝐋
 
---- Obviously `𝐆𝐋 =ₛ 𝐊𝟒(𝐋) =ₛ 𝐊𝟒(𝐇) =ₛ 𝐊𝟒𝐇`, since transivity of `≤ₛ` and definition of `=ₛ`.
+--- Obviously `𝐆𝐋 =ₛ 𝐊𝟒(𝐋) =ₛ 𝐊𝟒(𝐇) =ₛ 𝐊𝟒𝐇`, since transitivity of `≤ₛ` and definition of `=ₛ`.
 ```
 
 Note: `𝐊𝐇` (normal logic that axioms are `𝗞`, `𝗛`) is proper weak logic of `𝐆𝐋` and not Kripke complete.

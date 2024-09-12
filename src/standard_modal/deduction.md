@@ -9,7 +9,7 @@ structure DeductionParameter (α) where
   nec : Bool
 ```
 
-- `axiomSet` is set of formula (aximos), For example, `𝗞`, `𝗞 ∪ 𝗧 ∪ 𝟰`.
+- `axiomSet` is set of formulas (axioms), For example, `𝗞`, `𝗞 ∪ 𝗧 ∪ 𝟰`.
 - `nec` is flag to contain necessitation rule.
 
 The parameter is called _Normal_ if `axiomSet` includes `𝗞` and `nec` is `true`.

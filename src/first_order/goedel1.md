@@ -31,7 +31,7 @@ This theorem is proved two distinct approach.
 - [G1 in `FirstIncompleteness.lean`](https://formalizedformallogic.github.io/Foundation/docs/Logic/FirstOrder/Incompleteness/FirstIncompleteness.html#LO.FirstOrder.Arith.first_incompleteness)
 - [G1 in `SelfReference.lean`](https://formalizedformallogic.github.io/Foundation/docs/Logic/FirstOrder/Incompleteness/SelfReference.html#LO.FirstOrder.Arith.FirstIncompletenessBySelfReference.not_complete)
 
-`FirstIncompleteness.lean` is computability theoretic proof, while `SelfReference.lean` uses a well-known self-referencial argument.
+`FirstIncompleteness.lean` is computability theoretic proof, while `SelfReference.lean` uses a well-known self-referential argument.
 
 ### G1 in `FirstIncompleteness.lean`
 
