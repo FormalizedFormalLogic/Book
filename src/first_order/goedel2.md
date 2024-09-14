@@ -1,7 +1,5 @@
 # Gödel's Second Incompleteness Theorem
 
-_These results are/will be included in [Arithmetization](https://github.com/iehality/Arithmetization/tree/master)._
-
 Recall that inside $\mathsf{I}\Sigma_1$ we can do basic set theory and primitive recursion.
 Many inductive notions and functions on them are defined in $\Delta_1$ or $\Sigma_1$ using 
 the [fixpoint construction](./isigma1.md#fixpoint).
@@ -242,8 +240,13 @@ $$
 #### Lemma: Gödel sentence is undecidable, i.e., $T \nvdash \mathrm{G}$ if $T$ is consistent, and $T \nvdash \lnot\mathrm{G}$ if $\mathbb{N} \models T$.
 
 ```lean
-lemma goedel_unprovable [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [System.Consistent T] : T ⊬ ↑𝗚
-lemma not_goedel_unprovable [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [ℕ ⊧ₘ* T] : T ⊬ ∼↑𝗚
+lemma goedel_unprovable
+    (T : Theory ℒₒᵣ) [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [System.Consistent T] :
+    T ⊬ ↑𝗚
+
+lemma not_goedel_unprovable
+    (T : Theory ℒₒᵣ) [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [ℕ ⊧ₘ* T] :
+    T ⊬ ∼↑𝗚
 ```
 - [goedel_unprovable](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.goedel_unprovable)
 - [not_goedel_unprovable](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.not_goedel_unprovable)
@@ -255,15 +258,22 @@ $$
 
 #### Lemma: $T \vdash \mathrm{Con}_T \leftrightarrow G_T$
 ```lean
-lemma consistent_iff_goedel [𝐈𝚺₁ ≼ T] [T.Delta1Definable] : T ⊢! ↑𝗖𝗼𝗻 ⭤ ↑𝗚
+lemma consistent_iff_goedel
+    (T : Theory ℒₒᵣ) [𝐈𝚺₁ ≼ T] [T.Delta1Definable] :
+    T ⊢! ↑𝗖𝗼𝗻 ⭤ ↑𝗚
 ```
 - [consistent_iff_goedel](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.consistent_iff_goedel)
 
 #### Theorem: $T$ cannot prove its own consistency, i.e., $T \nvdash \mathrm{Con}_T$ if $T$ is consistent. Moreover, $\mathrm{Con}_T$ is undecidable from $T$ if $\mathbb{N} \models T$.
 
 ```lean
-theorem goedel_second_incompleteness [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [System.Consistent T] : T ⊬ ↑𝗖𝗼𝗻 
-theorem inconsistent_undecidable [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [ℕ ⊧ₘ* T] : System.Undecidable T ↑𝗖𝗼𝗻
+theorem goedel_second_incompleteness
+    (T : Theory ℒₒᵣ) [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [System.Consistent T] :
+    T ⊬ ↑𝗖𝗼𝗻 
+
+theorem inconsistent_undecidable
+    (T : Theory ℒₒᵣ) [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [ℕ ⊧ₘ* T] :
+    System.Undecidable T ↑𝗖𝗼𝗻
 ```
 - [goedel_second_incompleteness](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.goedel_second_incompleteness)
 - [inconsistent_undecidable](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.inconsistent_undecidable)

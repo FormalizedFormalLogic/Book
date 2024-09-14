@@ -1,15 +1,13 @@
 # Gödel's First Incompleteness Theorem
 
-An outline of the formalized proof of Gödel's first incompleteness theorem.
-
-## Definition
-
 A deduction system $\mathcal{S}$ is _complete_ iff it can prove or refute every sentence $\sigma$.
 Otherwise, $\mathcal{S}$ is _incomplete_.
 
 ```lean
-def LO.System.Complete : Prop := ∀ f, 𝓢 ⊢! f ∨ 𝓢 ⊢! ~f
+def System.Complete {F S} [System F S] [LogicalConnective F] (𝓢 : S) : Prop :=
+    ∀ f, 𝓢 ⊢! f ∨ 𝓢 ⊢! ~f
 ```
+- [System.Complete](https://formalizedformallogic.github.io/Incompleteness/docs/Logic/Logic/System.html#LO.System.Complete)
 
 ## Theorem
 
