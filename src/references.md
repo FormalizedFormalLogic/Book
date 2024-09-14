@@ -115,7 +115,7 @@ Modal Logic, based on textbook _"Modal Logic"_ by P. Blackburn, M. de Rijke, Y. 
 
 Coq formalization of several modal logics (related provability logic and etc.) and their caliculi.
 
-- [Ian Shillito, _New Foundations for the Proof Theory of Bi-Intuitionistic and Provability Logics Mechanized in Coq_](https://core.ac.uk/download/pdf/553999288.pdf).
+- [Ian Shillito, _New Foundations for the Proof Theory of Bi-Intuitionistic and Provability Logics Mechanized in Coq_](https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/0bbb4f8c-19b1-4e28-96e8-4ca795c863bf/content).
 
 #### [hferee/UIML](https://github.com/hferee/UIML)
 
