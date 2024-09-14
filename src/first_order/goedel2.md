@@ -224,6 +224,7 @@ $$
           \theta(\ulcorner \mathrm{fixpoint}_\theta \urcorner)
     \end{align*}
   $$
+  ∎
 
 ```lean
 theorem LO.FirstOrder.Arith.diagonal (θ : Semisentence ℒₒᵣ 1) :
@@ -258,7 +259,7 @@ lemma consistent_iff_goedel [𝐈𝚺₁ ≼ T] [T.Delta1Definable] : T ⊢! ↑
 ```
 - [consistent_iff_goedel](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.consistent_iff_goedel)
 
-#### Gödel's Second Incompleteness Theorem: $T$ cannot prove its own consistency, i.e., $T \nvdash \mathrm{Con}_T$ if $T$ is consistent. Moreover, $\mathrm{Con}_T$ is undecidable from $T$ if $\mathbb{N} \models T$.
+#### Theorem: $T$ cannot prove its own consistency, i.e., $T \nvdash \mathrm{Con}_T$ if $T$ is consistent. Moreover, $\mathrm{Con}_T$ is undecidable from $T$ if $\mathbb{N} \models T$.
 
 ```lean
 theorem goedel_second_incompleteness [𝐈𝚺₁ ≼ T] [T.Delta1Definable] [System.Consistent T] : T ⊬ ↑𝗖𝗼𝗻 
