@@ -1,11 +1,11 @@
-# lean4-logic
+# Formalized Formal Logic
 
 [This project](https://github.com/FormalizedFormalLogic/Foundation) is aim to formalize some various results of mathematical logic in [Lean Theorem Prover](https://lean-lang.org).
 
 This book provides explanation and summaries of formalized concepts, theorems, propositions.
 Proofs of them are not explained, refer to the code or the [references](./references.md).
 
-Full documentation is [here](https://formalizedformallogic.github.io/Foundation/docs).
+Full documentation is [here](https://formalizedformallogic.github.io/Incompleteness/docs/).
 
 ## Main Results
 
