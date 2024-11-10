@@ -251,7 +251,7 @@ lemma not_goedel_unprovable
 - [goedel_unprovable](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.goedel_unprovable)
 - [not_goedel_unprovable](https://formalizedformallogic.github.io/Incompleteness/docs/Incompleteness/Arith/Second.html#LO.FirstOrder.Arith.not_goedel_unprovable)
 
-Define formalized incompleteness sentence $\mathrm{Con}_T$:
+Define formalized consistency sentence $\mathrm{Con}_T$:
 $$
   \mathrm{Con}_T \coloneqq \lnot\mathrm{Bew}_T(\ulcorner \bot \urcorner)
 $$
