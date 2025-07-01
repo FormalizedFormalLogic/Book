@@ -1,5 +1,7 @@
 # [Book of Formalized Formal Logic](https://formalizedformallogic.github.io/Book/)
 
+**This document is outdated. See [Foundation](https://formalizedformallogic.github.io/Foundation/book).**
+
 [![Deploy Status](https://github.com/FormalizedFormalLogic/book/actions/workflows/deploy.yml/badge.svg)](https://github.com/FormalizedFormalLogic/book/actions/workflows/deploy.yml)
 
 Summary and brief explanation of formalized results in this project.
